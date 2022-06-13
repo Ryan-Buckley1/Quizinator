@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUIZINATOR</title>
 </head>
+
 <body>
     <header>
+        <a href="./highscores.html" id="highscores">View high scores</a>
+        <h2 class="timer" id="timer"></h2>
         <h1>QUIZINATOR</h1>
-        <p>Do you have what it takes to be the highest scorer?</p>
-        <h2 class="timer" id="timer"></h2>     
+        <p id="p1">Do you have what it takes to set a new high score?</p>
     </header>
-    <button class="btn" id="startButton">Start</button>
-    <script scr="./assets/script"></script>
+    <main class="quiz-area" id="quiz-area">
+        <button class="btn" id="startButton">Start</button>
+        <div class="quiz" id="quiz">
+            <div id="question"></div>
+            <ul class="question-answers" id="question-answers">
+                <li class="choice" data-Number="1" id="A"></li>
+                <li class="choice" id="B"></li>
+                <li class="choice" id="C"></li>
+                <li class="choice" id="D"></li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="./assets/script.js"></script>
 </body>
+
 </html>
