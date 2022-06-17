@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
     <title>QUIZINATOR Highscores</title>
 </head>
 <body>
     <header>
         <h1>QUIZINATOR</h1>
-        <div class="highscores" id="highscores"></div>
-        <p class="highscore-table" id="highscore-table"></p>
+        <div class="highscores" id="highscores">
+            <h3>High Scores</h3>
+        </div>
+        <div class="highscore-table" id="highscore-table">
+            <p class="highscore-player" id="highscore-player"></p>
+            <p class="highscore-score" id="highscore-score"></p>
+        </div>
     </header>
+    <footer class="return-to-game" id="return-to-game">
+        <a class="return" href="./index.html">Return to game</a>
+    </footer>
+    <script src="./assets/hsscript.js"></script>
 </body>
 </html>

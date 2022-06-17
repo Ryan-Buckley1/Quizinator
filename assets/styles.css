@@ -1,66 +1,84 @@
-main {
-    text-align: center;
-    list-style: none;
+.hs-timer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: top;
+}
+#highscores {
+    text-decoration: none;
+    color: rgb(216, 154, 231);
+}
+#timer {
+    text-align: right;
+
 }
 header h1 {
     text-align: center;
 }
-header p {
-    text-align: center;
-}
-#highscores {
-    text-align: left;
-    text-decoration: none;
-}
-#timer {
-    text-align: right;
-}
-.choice {
-    list-style: none;
-}
-/* body {
-    font-size: 20px;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
-#container{
-    margin : 200px auto;
-    background-color: white;
-    height: 500px;
-    width : 1000px;
-    border-radius: 5px;
-    box-shadow: 0px 5px 15px 0px;
-    position: relative;
-}
-
-header {
-    font-weight: bold;
-    text-align: center;
-    text-decoration: underline;
-}
-
 p {
     text-align: center;
-    font-size:medium;
-    flex-direction: row;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 5px;
-    margin-bottom: 10px;
 }
-
-#start {
-    background-color: purple;
-    color: aliceblue;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-    font-size: large;
-    max-width: fit-content;
-    margin-left: 435px;
-    padding-left: 10px;
-    padding-right: 10px;
+main {
+    display: flex;
+    flex-direction: column;
+    margin:0 35vh
+}
+button {
+    background-color: rgb(54, 2, 175);
+    color: white;
+    border-radius: 15px;
+}
+button:hover {
+    background-color: rgb(167, 116, 180);
+}
+#question {
+    font-size: larger;
+    font-weight: bold;
+}
+li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    color:white;
     border-radius: 10px;
-    border: 2px solid;
+    background-color: rgb(54, 2, 175);
 }
-
-#start :hover {
-    background-color: rgb(231, 113, 35);
-} */
+.choice:hover {
+    background-color: rgb(167, 116, 180) ;
+}
+.correct-incorrect {
+    opacity: 50%;
+}
+#submit-button {
+    background-color: rgb(54, 2, 175);
+    color: white;
+    border-radius: 15px;
+}
+#submit-button:hover {
+    background-color: rgb(167, 116, 180);
+}
+#highscore-table {
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+    justify-content: center;
+    margin: 0 25vh;
+}
+h3 {
+    text-align: center;
+}
+#return-to-game {
+    text-align: center;
+    margin: 20px;
+}
+.return {
+    padding: 10px;
+    margin: 5px;
+    color:white;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: rgb(54, 2, 175);
+}
+.return:hover {
+    background-color: rgb(167, 116, 180);
+}

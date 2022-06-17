@@ -11,8 +11,10 @@
 
 <body>
     <header>
+        <div class="hs-timer">
         <a href="./highscores.html" id="highscores">View high scores</a>
         <h2 class="timer" id="timer"></h2>
+        </div>
         <h1>QUIZINATOR</h1>
         <p id="p1">Do you have what it takes to set a new high score?</p>
     </header>
@@ -25,7 +27,14 @@
                 <li class="choice" id="B"></li>
                 <li class="choice" id="C"></li>
                 <li class="choice" id="D"></li>
+
+                
             </ul>
+            <div class="correct-incorrect" id="correct-incorrect"></div>
+        <form id="submit-name" class="submit-name">
+            <input type="text" class="inital-input" id="initial-input" >
+            <input type="submit" id="submit-button">
+        </form>
         </div>
     </main>
 
